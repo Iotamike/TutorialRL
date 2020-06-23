@@ -16,8 +16,10 @@ then run engine.py
 
 > python engine.py
 
-control with numpad
+control with numpad or w = up, x = down, a = left, d = right, qezc = diagonals
 
 # To do
 
-modify input_handlers so that everyone on laptops can control it ...
+~~modify input_handlers so that everyone on laptops can control it ...~~
+
+  
