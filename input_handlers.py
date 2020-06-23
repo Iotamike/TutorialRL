@@ -21,21 +21,21 @@ class EventHandler(tcod.event.EventDispatch[Action]):
 
         key = event.sym
 
-        if key == tcod.event.K_KP_8:
+        if key == tcod.event.K_KP_8 or tcod.event.KP_w:
             action = MovementAction(dx=0, dy=-1)
-        elif key == tcod.event.K_KP_2:
+        elif key == tcod.event.K_KP_2 or tcod.event.KP_x:
             action = MovementAction(dx=0, dy=1)
-        elif key == tcod.event.K_KP_4:
+        elif key == tcod.event.K_KP_4 or tcod.event.KP_a:
             action = MovementAction(dx=-1, dy=0)
-        elif key == tcod.event.K_KP_6:
+        elif key == tcod.event.K_KP_6 or tcod.event.KP_d:
             action = MovementAction(dx=1, dy=0)
-        elif key == tcod.event.K_KP_7:
+        elif key == tcod.event.K_KP_7 or tcod.event.KP_q:
             action = MovementAction(dx=-1, dy=-1)
-        elif key == tcod.event.K_KP_9:
+        elif key == tcod.event.K_KP_9 or tcod.event.KP_e:
             action = MovementAction(dx=1, dy=-1)
-        elif key == tcod.event.K_KP_1:
+        elif key == tcod.event.K_KP_1 or tcod.event.KP_z:
             action = MovementAction(dx=-1, dy=1)
-        elif key == tcod.event.K_KP_3:
+        elif key == tcod.event.K_KP_3 or tcod.event.KP_c:
             action = MovementAction(dx=1, dy=1)
 
         elif key == tcod.event.K_ESCAPE:
